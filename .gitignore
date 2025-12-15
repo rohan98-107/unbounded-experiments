@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Julia
+*.ji
+*.so
+*.dll
+*.dylib
+
+# OS junk
+.DS_Store
+
+# Conda
+.env
