@@ -2,8 +2,8 @@ def generate_ampl_model(
     filename,
     objective,
     constraints,
-    variables,
-    bounds
+    variables=None,
+    bounds=None
 ):
     """
 Generate a simple AMPL model for polynomial optimization.
@@ -14,8 +14,20 @@ Intended for BARON / Couenne via NEOS.
         f.write("# Generated AMPL model\n\n")
 
         for v in variables:
-            lo, hi = bounds[v]
-            f.write(f"var {v} >= {lo} <= {hi};\n")
+            if bounds is not None and v in bounds:
+                lo, hi = bounds[v]
+
+                if lo is None and hi is None:
+                    f.write(f"var {v};\n")
+                elif lo is None:
+                    f.write(f"var {v} <= {hi};\n")
+                elif hi is None:
+                    f.write(f"var {v} >= {lo};\n")
+                else:
+                    f.write(f"var {v} >= {lo} <= {hi};\n")
+            else:
+                f.write(f"var {v};\n")
+
 
         f.write("\n")
         f.write(f"minimize obj: {objective};\n")

@@ -1,14 +1,8 @@
-You are using the solver baron.
-Checking ampl.mod for baron_options...
-Executing AMPL.
-processing data.
-processing commands.
-Executing on prod-exec-7.neos-server.org
-
-2 variables, all nonlinear
-0 constraints
-1 nonlinear objective; 2 nonzeros.
-
-BARON 25.8.5 (2025.08.05): threads=4
-BARON 25.8.5 (2025.08.05): 25 iterations, optimal within tolerances.
-Objective -9.015522264
+free(): invalid next size (fast)
+ 
+*** A potentially catastrophic access violation just took place 
+*** The search will be terminated by BARON after returning the best known solution 
+*** Please report this problem to Nick Sahinidis (niksah@minlp.com) 
+ 
+error running baronin:
+	teBARON 25.8.5 (2025.08.05): 1 iterations, unbounded.

@@ -1,6 +1,16 @@
 include("test_unbounded.jl")
 
-@polyvar x y
-f_hard = x^4 + y^4 + 2x^2*y^2 - 3x^3 + 4*x*y^2 - 6*y
+@polyvar x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12
 
-test_unbounded("Moderately difficult unbounded example", f_hard)
+s = x2^2 + x3^2 + x4^2 + x5^2 + x6^2 + x7^2 + x8^2 + x9^2 + x10^2 + x11^2 + x12^2
+
+f = x1^8 * s - x1^9
+
+K = @set (s - x1 <= 0) && (1 - s <= 0)
+
+test_unbounded(
+    "High-degree unbounded (n = 12, k = 4)",
+    f;
+    domain = K,
+    maxdegree = 12
+)
