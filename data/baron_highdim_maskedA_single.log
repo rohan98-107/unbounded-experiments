@@ -1,0 +1,17 @@
+===================================================
+MODEL: highdim_maskedA_unbounded_n12.mod
+===================================================
+
+You are using the solver baron.
+Checking ampl.mod for baron_options...
+Executing AMPL.
+processing data.
+processing commands.
+Executing on prod-exec-6.neos-server.org
+
+12 variables, all nonlinear
+0 constraints
+1 nonlinear objective; 12 nonzeros.
+
+BARON 25.8.5 (2025.08.05): threads=4
+BARON 25.8.5 (2025.08.05): 1 iterations, unbounded.

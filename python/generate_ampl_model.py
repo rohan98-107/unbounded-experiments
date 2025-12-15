@@ -28,8 +28,10 @@ Intended for BARON / Couenne via NEOS.
             else:
                 f.write(f"var {v};\n")
 
-
         f.write("\n")
-        f.write(f"minimize obj: {objective};\n")
+        f.write(f"minimize obj: {objective};\n\n")
+
+        for i, c in enumerate(constraints):
+            f.write(f"subject to c{i+1}: {c};\n")
 
     print(f"Wrote AMPL model: {filename}")
