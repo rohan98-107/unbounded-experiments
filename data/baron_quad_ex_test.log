@@ -1,0 +1,18 @@
+===================================================
+MODEL: quadratic_equality_outside_ball.mod
+===================================================
+
+You are using the solver baron.
+Checking ampl.mod for baron_options...
+Executing AMPL.
+processing data.
+processing commands.
+Executing on prod-exec-7.neos-server.org
+
+2 variables, all nonlinear
+2 constraints, all nonlinear; 4 nonzeros
+	2 inequality constraints
+1 nonlinear objective; 2 nonzeros.
+
+BARON 25.8.5 (2025.08.05): threads=4
+BARON 25.8.5 (2025.08.05): 1 iterations, unbounded.

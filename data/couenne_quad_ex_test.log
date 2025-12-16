@@ -1,0 +1,99 @@
+===================================================
+MODEL: quadratic_equality_outside_ball.mod
+===================================================
+
+You are using the solver couenne.
+Checking ampl.mod for couenne_options...
+Executing AMPL.
+processing data.
+processing commands.
+Executing on prod-exec-7.neos-server.org
+
+2 variables, all nonlinear
+2 constraints, all nonlinear; 4 nonzeros
+	2 inequality constraints
+1 nonlinear objective; 2 nonzeros.
+
+Couenne 0.5.8 -- an Open-Source solver for Mixed Integer Nonlinear Optimization
+Mailing list: couenne@list.coin-or.org
+Instructions: http://www.coin-or.org/Couenne
+couenne: 
+ANALYSIS TEST: NLP0012I 
+              Num      Status      Obj             It       time                 Location
+NLP0014I             1      INFEAS 0.99999999        8 0.003693
+Loaded instance "/tmp/neos-2190400/at2190401.nl"
+Constraints:            2
+Variables:              2 (0 integer)
+Auxiliaries:            7 (0 integer)
+
+Coin0506I Presolve 10 (-5) rows, 4 (-5) columns and 20 (-13) elements
+Clp0006I 0  Obj -9.99e+12 Primal inf 0.999999 (1)
+Clp0006I 3  Obj -9.99e+12
+Clp0000I Optimal - objective value -9.99e+12
+Clp0032I Optimal objective -9.99e+12 - 3 iterations time 0.002, Presolve 0.00
+Clp0000I Optimal - objective value -9.99e+12
+NLP Heuristic: NLP0014I             2      INFEAS 0.49999998      211 0.057796
+no solution.
+Clp0000I Optimal - objective value -9.99e+12
+Optimality Based BT: 4 improved bounds
+Probing: 5 improved bounds
+Couenne: new cutoff value -3.5264174873e-01 (0.119623 seconds)
+Couenne: new cutoff value -3.5309811236e-01 (0.119709 seconds)
+Couenne: new cutoff value -3.5351544136e-01 (0.119796 seconds)
+Couenne: new cutoff value -3.5351557904e-01 (0.119887 seconds)
+NLP Heuristic: no solution.
+Cbc0031I 4 added rows had average density of 2
+Cbc0013I At root node, 4 cuts changed objective from -9.99e+12 to -9.99e+12 in 11 passes
+Cbc0014I Cut generator 0 (Couenne convexifier cuts) - 28 row cuts average 2.0 elements, 12 column cuts (12 active)
+Cbc0010I After 0 nodes, 1 on tree, 1e+50 best solution, best possible -1.7976931e+308 (0.46 seconds)
+Optimality Based BT: 3 improved bounds
+Optimality Based BT: 3 improved bounds
+Couenne: new cutoff value -1.0290531526e+12 (1.73168 seconds)
+Optimality Based BT: 1 improved bounds
+Optimality Based BT: 0 improved bounds
+Couenne: new cutoff value -3.6944045830e+12 (3.98736 seconds)
+Couenne: new cutoff value -6.1366692443e+12 (4.12101 seconds)
+Couenne: new cutoff value -7.7879946741e+12 (4.12483 seconds)
+Optimality Based BT: 0 improved bounds
+Couenne: new cutoff value -8.7747627877e+12 (4.12494 seconds)
+Couenne: new cutoff value -9.3313313239e+12 (4.12513 seconds)
+Couenne: new cutoff value -9.6363542823e+12 (4.93043 seconds)
+Couenne: new cutoff value -9.8010678521e+12 (4.93063 seconds)
+Couenne: new cutoff value -9.8893303819e+12 (4.93652 seconds)
+Couenne: new cutoff value -9.9364346339e+12 (4.93671 seconds)
+Couenne: new cutoff value -9.9615194947e+12 (4.9369 seconds)
+Couenne: new cutoff value -9.9748629822e+12 (4.93708 seconds)
+Couenne: new cutoff value -9.9819565540e+12 (4.93731 seconds)
+Couenne: new cutoff value -9.9857263815e+12 (4.93747 seconds)
+Couenne: new cutoff value -9.9877294884e+12 (4.93764 seconds)
+Couenne: new cutoff value -9.9887937479e+12 (4.93789 seconds)
+Couenne: new cutoff value -9.9887937479e+12 (4.93791 seconds)
+Couenne: new cutoff value -9.9893591665e+12 (4.93807 seconds)
+Couenne: new cutoff value -9.9896595538e+12 (4.93825 seconds)
+Couenne: new cutoff value -9.9898191370e+12 (4.93849 seconds)
+Couenne: new cutoff value -9.9899039162e+12 (4.93866 seconds)
+Couenne: new cutoff value -9.9899489554e+12 (4.93879 seconds)
+Couenne: new cutoff value -9.9899728826e+12 (4.93925 seconds)
+Couenne: new cutoff value -9.9899855938e+12 (4.93943 seconds)
+Couenne: new cutoff value -9.9899923467e+12 (4.93961 seconds)
+Couenne: new cutoff value -9.9899959342e+12 (4.9398 seconds)
+Couenne: new cutoff value -9.9899978400e+12 (4.93999 seconds)
+Couenne: new cutoff value -9.9899978400e+12 (4.94003 seconds)
+Couenne: new cutoff value -9.9899988525e+12 (4.94017 seconds)
+Couenne: new cutoff value -9.9899993904e+12 (4.94017 seconds)
+Cbc0004I Integer solution of -9.99e+12 found after 151 iterations and 57 nodes (4.93 seconds)
+Cbc0001I Search completed - best objective -9989999999999.98, took 151 iterations and 57 nodes (4.93 seconds)
+Cbc0035I Maximum depth 28, 0 variables fixed on reduced cost
+
+ 	"Finished"
+
+Linearization cuts added at root node:         15
+Linearization cuts added in total:             15  (separation time: 3.4e-05s)
+Total solve time:                          4.9337s (4.9337s in branch-and-bound)
+Lower bound:                                 -inf
+Upper bound:                            -9.99e+12  (gap: 0.00%)
+Branch-and-bound nodes:                        57
+Performance of                           FBBT:	   0.000356s,       96 runs. fix:          0 shrnk: 0.00436679 ubd:   0.730544 2ubd:    1.12116 infeas:          0
+Performance of                           OBBT:	   0.002349s,        6 runs. fix:          0 shrnk:   0.882662 ubd:   0.380952 2ubd:   0.190476 infeas:          0
+
+couenne: Optimal
